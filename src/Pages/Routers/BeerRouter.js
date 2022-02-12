@@ -9,11 +9,11 @@ export const BeerRouter = () => {
     return (
         <div className='ba-container'>
             <Routes>
-                <Route path="/*"
+                <Route path="/beer-app/*"
                     element={
                         <BeerList isAuthenticated={isAuthenticated}/>
                     } />
-                <Route path="/beer/:beerId"
+                <Route path="/beer-app/beer/:beerId"
                     element={
                         <BeerDetail isAuthenticated={isAuthenticated}/>
                     } />

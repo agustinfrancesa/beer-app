@@ -9,7 +9,7 @@ export const BeerDetail = () => {
     const { auth, beers, drinks } = useSelector(state => state);
     const navigate = useNavigate();
     const handleBack = () => {
-        navigate('/');
+        navigate('/beer-app/');
     };
 
     const { beerId } = useParams();

@@ -8,12 +8,12 @@ export const AuthRouter = () => {
     const navigate = useNavigate();
     const {isAuthenticated} = useSelector( state => state.auth );
     const handleBack = () => {
-        navigate('/');
+        navigate('/beer-app/');
     };
     return (
         isAuthenticated
             ?
-            <Navigate to="/" />
+            <Navigate to="/beer-app/" />
             :
             (<div className='ar-main'>
                 <div className='ar-box-container'>

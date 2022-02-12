@@ -66,12 +66,12 @@ export const AppRouter = () => {
         <div className='ar-main-app'>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/auth/*"
+                    <Route path="/beer-app/auth/*"
                         element={
                             <AuthRouter />
                         } />
 
-                    <Route path="/*"
+                    <Route path="/beer-app/*"
                         element={
                             <>
                                 <Navbar />
