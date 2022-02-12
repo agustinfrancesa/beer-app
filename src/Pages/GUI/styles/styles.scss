@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+@import './variables.scss';
+@import './beer-card';
+@import './asidebar';
+@import './beer-list';
+@import './beer-detail';
+@import './auth-router';
+@import './app-router';
+@import './navbar';
+
+
+body{
+    background-color: $grey;
+}
+
+
+.ba-container{
+    height: calc(100% - 56px);
+}
+
+
+.ba-btn {
+    background-color: $cream;
+    color: $grey;
+    outline: none;
+
+    transition: background-color .5s ease;
+
+    &:hover{
+        background-color: darken($color: $cream, $amount: 10);
+    }
+}

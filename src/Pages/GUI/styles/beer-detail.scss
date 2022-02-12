@@ -1,0 +1,141 @@
+.bd-beer-detail {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .bd-beer-can-container {
+        position: relative;
+
+        .bd-beer-can {
+            position: absolute;
+            min-width: 200px;
+            max-width: 400px;
+            top: 213px;
+            left: 70px;
+        }
+    }
+
+    .bd-beer-detail-up {
+        background-color: $cream;
+        height: 40%;
+        display: flex;
+
+        >div {
+            display: flex;
+            margin: 0 0 20px 40%;
+            align-items: flex-end;
+
+            h3 {
+                font-size: 120px;
+            }
+
+            h5 {
+                font-size: 40px;
+                font-weight: lighter;
+            }
+
+
+        }
+    }
+
+    .bd-label {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 3px;
+        border: 3px solid $yellow;
+        background-color: $yellow;
+        border-radius: 3px;
+        margin-top: 5px;
+        color: $grey;
+        width: fit-content;
+    }
+
+    .bd-beer-detail-down {
+        background-color: $light-grey;
+        height: 60%;
+        display: flex;
+
+        >div {
+            display: flex;
+            margin: 20px 0 0 40%;
+            align-items: flex-start;
+        }
+
+
+        .bd-beer-detail-description {
+            width: 40%;
+            color: $cream;
+        }
+
+        .bd-beer-detail-info {
+            margin: 0 0 0 13%;
+            display: flex;
+
+            div:first-child,
+            div:nth-child(2),
+            div:nth-child(3) {
+                color: $cream;
+                text-align: center;
+                font-weight: bold;
+                margin: 0 10px;
+                justify-content: center;
+            }
+
+            div:first-child {
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+
+                >div {
+                    padding: 3px;
+                    border: 3px solid $yellow;
+                    background-color: $yellow;
+                    border-radius: 3px;
+                    margin-top: 5px;
+                    color: $grey;
+                }
+
+            }
+
+            div:nth-child(2) {
+                div:last-child {
+                    font-weight: bolder;
+                    font-size: 24px;
+                    background-color: $cream;
+                    padding: 7px;
+                    border-radius: 3px;
+                    color: $light-grey;
+                    border: 3px solid $cream;
+                }
+            }
+
+            div:nth-child(3) {
+                div:last-child {
+                    font-weight: bolder;
+                    font-size: 24px;
+                    padding: 7px;
+                    border: 3px solid $cream;
+                    border-radius: 3px;
+                    background-color: $light-grey;
+                    color: $cream;
+                }
+            }
+        }
+    }
+
+    .bd-add-remove-Drink {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            cursor: pointer;
+
+            &:hover{
+                color: $grey;
+            }
+        }
+
+    }
+}

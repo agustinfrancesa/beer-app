@@ -1,0 +1,14 @@
+.navbar {
+    height: 56px!important;
+
+    .navbar-brand {
+        color: $yellow !important;
+    }
+    .n-name{
+        color: $yellow;
+        margin-right: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

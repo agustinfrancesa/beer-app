@@ -1,0 +1,64 @@
+.bc-card {
+    display: flex;
+    flex-direction: row;
+    background-color: $grey;
+    border: solid $yellow 3px;
+    color: $yellow;
+    font-family: 'Tungsten';
+    text-transform: uppercase;
+    padding: 5px;
+    width: 400px;
+
+    cursor: pointer;
+
+    &:hover{
+        background-color: lighten($color: $grey, $amount: 5);
+    }
+
+    & h5{
+        color: white;
+    }
+
+}
+
+.bc-dualcol {
+    background: linear-gradient(to top, $cream 0%, $cream 50%, $light-grey 50%, $light-grey 100%);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-right: 30px;
+}
+.bc-label{
+    border-radius: 3px;
+    padding: 1px 3px;
+    color: $grey;
+    margin: 20px 0px;
+}
+
+
+.bc-info-box{
+    display: flex;
+    margin: 20px 0px 0px 0;
+    align-items: center;
+    padding: 10px;
+}
+
+.bc-info-data{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #f3f7fd;
+    font-family: 'Tungsten';
+}
+
+.bc-info-label{
+    transform: rotate(-90deg);
+    font-size: 12px;
+    color: $yellow;
+    line-height: 35px;
+}
