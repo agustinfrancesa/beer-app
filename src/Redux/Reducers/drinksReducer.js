@@ -26,6 +26,12 @@ export const drinksReducer = (state = initialState, action) => {
                 )
             }
 
+            case types.drinkLoadEmptyDrinks:
+                return {
+                    ...state,
+                    drinks: []
+                }
+
         default:
             return state
     }

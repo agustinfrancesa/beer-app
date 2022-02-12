@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { startAddFirstDrink, startUpdateDrink } from '../../Redux/Actions/drinkActions';
@@ -12,7 +12,19 @@ export const BeerDetail = () => {
         navigate('/beer-app/');
     };
 
+    // const [logdedIn, setLogdedIn] = useState(false);
+    // const [logdedIn, setLogdedIn] = useState(false);
+
+   
+    // useEffect(() => {
+ 
+
+    // }, [])
+    
+
+
     const { beerId } = useParams();
+
     const beer = useMemo(() =>
         beers.beers.find(beer => beer.id === beerId),
         [beers.beers, beerId]);
@@ -23,7 +35,7 @@ export const BeerDetail = () => {
 
 
     if (!beer) {
-        return <Navigate to='/' />
+        return <Navigate to='/beer-app/' />
     }
 
     const handleAddDrink = (add) => {

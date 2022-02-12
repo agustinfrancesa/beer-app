@@ -12,6 +12,13 @@ export const startLoadDrinks = () => {
     }
 };
 
+export const loadEmptyDrinks = () => ({
+    type: types.drinkLoadEmptyDrinks,
+    payload: {
+        drinks: []
+    }
+});
+
 
 export const loadDrinks = (drinks, uid) => (
     {

@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { firebase } from '../../Data/DataBase/firebase-config'
 import { login } from '../../Redux/Actions/authActions';
 import {startLoadingBeers } from '../../Redux/Actions/beerActions';
-import { startLoadDrinks } from '../../Redux/Actions/drinkActions';
+import { loadEmptyDrinks, startLoadDrinks } from '../../Redux/Actions/drinkActions';
 // import {loadBeers} from '../../Data/Selectors/loadBeers'
 
 
@@ -39,6 +39,8 @@ export const AppRouter = () => {
             if (user?.uid) {
                 dispatch(login(user.uid, user.displayName));
                 await dispatch(startLoadDrinks());
+            } else {
+                await dispatch(loadEmptyDrinks());
             }
             setChecking(false);
         });
@@ -66,12 +68,12 @@ export const AppRouter = () => {
         <div className='ar-main-app'>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/beer-app/auth/*"
+                    <Route path="/auth/*"
                         element={
                             <AuthRouter />
                         } />
 
-                    <Route path="/beer-app/*"
+                    <Route path="/*"
                         element={
                             <>
                                 <Navbar />

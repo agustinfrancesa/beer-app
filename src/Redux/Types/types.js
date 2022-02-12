@@ -15,5 +15,6 @@ export const types = {
     drinkLoad:'[DRINKS] Load drinks',
     drinkFirstRefresh:'[DRINKS] Refresh first drinks',
     drinkUpdateRefresh:'[DRINKS] Refresh update drinks',
+    drinkLoadEmptyDrinks:'[DRINKS] Load empty drinks',
 
 };
